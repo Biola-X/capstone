@@ -1,0 +1,76 @@
+site_name: Biola Engineering Capstone — Project Ideas
+site_description: >-
+  A live collection of proposed 2026–27 Engineering Senior Capstone project
+  ideas, including sponsor, scholarship, and deliverable details.
+site_author: Biola University Engineering
+
+# GitHub Pages URL for the Biola-X/capstone repository.
+site_url: https://biola-x.github.io/capstone/
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/lightbulb-on
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+    - search.suggest
+
+extra_css:
+  - stylesheets/biola.css
+
+# Ideas that are not explicitly listed in `nav` below still build fine — this
+# just silences the warning so you can add idea files freely.
+validation:
+  nav:
+    omitted_files: ignore
+  not_found: warn
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Submit a Proposal: submit.md
+  - Project Ideas:
+      - ideas/index.md
+      - Idea Template: ideas/_template.md
+      - "01 · Autonomous Campus Delivery Cart": ideas/idea-01-autonomous-cart.md
+      - "02 · Low-Cost Water Quality Sensor Buoy": ideas/idea-02-water-quality-buoy.md
+      - "03 · Adaptive Controller for Accessible Gaming": ideas/idea-03-adaptive-controller.md
+      # Add a new line here for each idea file you create in docs/ideas/
+
+plugins:
+  - search
