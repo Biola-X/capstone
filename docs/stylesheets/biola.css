@@ -128,7 +128,13 @@
   color: #fff;
   background: var(--biola-slate);
 }
-.status.draft      { background: #8a8f98; }
-.status.exploring  { background: var(--biola-fountain-blue); }
-.status.sponsored  { background: #2e7d32; }
-.status.parked     { background: var(--biola-red-dark); }
+.status.draft       { background: #8a8f98; }
+.status.exploring   { background: var(--biola-fountain-blue); }
+.status.sponsored   { background: #2e7d32; }
+.status.parked      { background: var(--biola-red-dark); }
+
+/* Used by SEI (completed projects) and Industry Partnerships */
+.status.completed   { background: var(--biola-navy); }
+.status.active      { background: #2e7d32; }
+.status.prospective { background: var(--biola-fountain-blue); }
+.status.paused      { background: #8a8f98; }

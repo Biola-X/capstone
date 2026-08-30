@@ -46,9 +46,9 @@ person reviewing this idea.*
 
 <!--
 TO PUBLISH THIS IDEA
-  1. Save this file as docs/ideas/idea-NN-short-name.md
+  1. Save this file as docs/capstone/ideas/idea-NN-short-name.md
   2. Replace NN and <Idea Title> above and set the status pill:
        draft | exploring | sponsored | parked
-  3. Add a card for it in docs/ideas/index.md
+  3. Add a card for it in docs/capstone/ideas/index.md
   4. Add a nav line for it in mkdocs.yml under "Project Ideas"
 -->

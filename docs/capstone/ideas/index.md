@@ -43,10 +43,10 @@ Every idea below has the same four sections — **Capstone Project Idea**,
 
 ## Add a new idea
 
-1. Copy `docs/ideas/_template.md` to a new file, e.g.
-   `docs/ideas/idea-04-my-concept.md`.
+1. Copy `docs/capstone/ideas/_template.md` to a new file, e.g.
+   `docs/capstone/ideas/idea-04-my-concept.md`.
 2. Fill in the four sections and the status.
 3. Add a card to the grid above (copy one of the `-` blocks).
-4. Add a line under **Project Ideas** in `mkdocs.yml` so it appears in the left
+4. Add a line under **Project Ideas** in `mkdocs.yml` so it appears in the
    navigation.
 5. Commit and push — the site rebuilds automatically.

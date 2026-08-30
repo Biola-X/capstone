@@ -1,7 +1,8 @@
-site_name: Biola Engineering Capstone — Project Ideas
+site_name: Biola-X
 site_description: >-
-  A live collection of proposed 2026–27 Engineering Senior Capstone project
-  ideas, including sponsor, scholarship, and deliverable details.
+  Biola-X is Biola University Engineering's umbrella initiative for industry-
+  connected work: the Engineering Senior Capstone, Summer Engineering Internships,
+  and Industry Partnerships.
 site_author: Biola University Engineering
 
 # GitHub Pages URL for the Biola-X/capstone repository.
@@ -30,6 +31,9 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
     - navigation.tracking
     - navigation.top
     - navigation.indexes
@@ -41,8 +45,8 @@ theme:
 extra_css:
   - stylesheets/biola.css
 
-# Ideas that are not explicitly listed in `nav` below still build fine — this
-# just silences the warning so you can add idea files freely.
+# Pages not listed in `nav` still build fine — this just silences the warning
+# so you can add idea / project / partner files freely.
 validation:
   nav:
     omitted_files: ignore
@@ -53,6 +57,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true
   - pymdownx.details
@@ -63,14 +69,29 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Submit a Proposal: submit.md
-  - Project Ideas:
-      - ideas/index.md
-      - Idea Template: ideas/_template.md
-      - "01 · Autonomous Campus Delivery Cart": ideas/idea-01-autonomous-cart.md
-      - "02 · Low-Cost Water Quality Sensor Buoy": ideas/idea-02-water-quality-buoy.md
-      - "03 · Adaptive Controller for Accessible Gaming": ideas/idea-03-adaptive-controller.md
-      # Add a new line here for each idea file you create in docs/ideas/
+
+  - Engineering Senior Capstone:
+      - capstone/index.md
+      - Submit a Proposal: capstone/submit.md
+      - Project Ideas:
+          - capstone/ideas/index.md
+          - Idea Template: capstone/ideas/_template.md
+          - "01 · Autonomous Campus Delivery Cart": capstone/ideas/idea-01-autonomous-cart.md
+          - "02 · Low-Cost Water Quality Sensor Buoy": capstone/ideas/idea-02-water-quality-buoy.md
+          - "03 · Adaptive Controller for Accessible Gaming": capstone/ideas/idea-03-adaptive-controller.md
+          # Add a line here for each new file in docs/capstone/ideas/
+
+  - Summer Engineering Internships:
+      - sei/index.md
+
+  - Industry Partnerships:
+      - partnerships/index.md
+      - Santa Ynez Fire Department: partnerships/santa-ynez-fire-department.md
+      - Water Land Surveying: partnerships/water-land-surveying.md
+      - AI Company: partnerships/ai-company.md
+      - Space Company: partnerships/space-company.md
+      - Defense Tech: partnerships/defense-tech.md
+      # Add a line here for each new file in docs/partnerships/
 
 plugins:
   - search

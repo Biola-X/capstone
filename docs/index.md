@@ -5,58 +5,59 @@ hide:
 
 <div class="biola-hero" markdown>
 
-# 2026–27 Engineering Senior Capstone — Project Ideas
+# Biola-X
 
-This site is a **living catalog** of capstone project ideas for Biola University's
-Engineering Senior Capstone program. Each idea is tracked with its sponsor,
-scholarship / funding, and expected deliverables, and is updated as the concept
-evolves.
+**Biola-X** is Biola University Engineering's umbrella initiative for
+industry-connected engineering work — where students, faculty, and outside
+partners collaborate on real projects.
 
-Rather than filling out the proposal form separately for every idea, the form
-points here — reviewers and potential sponsors can browse everything in one place.
+It runs across three programs:
 
-[Browse the ideas](ideas/index.md){ .md-button .md-button--primary }
-[Submit a proposal](submit.md){ .md-button }
+[Engineering Senior Capstone](capstone/index.md){ .md-button .md-button--primary }
+[Summer Engineering Internships](sei/index.md){ .md-button }
+[Industry Partnerships](partnerships/index.md){ .md-button }
 
 </div>
 
-## How this site is organized
+## The three programs
 
 <div class="grid cards" markdown>
 
--   :material-format-list-bulleted: **[Project Ideas](ideas/index.md)**
+-   :material-school: **[Engineering Senior Capstone](capstone/index.md)**
 
     ---
 
-    One page per idea. Every page has the same four sections so they are easy to
-    compare: **Capstone Project Idea**, **Sponsor**, **Scholarship**, and
-    **Deliverables**.
+    Year-long, team-based senior design projects sponsored by industry and
+    community partners. This section holds the **live catalog of project ideas**
+    for the upcoming year and the **proposal form** for new sponsors.
 
--   :material-file-document-edit: **[Submit a Proposal](submit.md)**
-
-    ---
-
-    The official Google Form, embedded directly. If you cannot see the embed, the
-    same questions are listed on that page for reference.
-
--   :material-file-plus: **[Idea Template](ideas/_template.md)**
+-   :material-white-balance-sunny: **[Summer Engineering Internships (SEI)](sei/index.md)**
 
     ---
 
-    Copy this file to start a new idea. Instructions for adding it to the
-    navigation are included at the bottom of the template.
+    Paid summer research and development placements where students tackle a
+    focused engineering problem over 8–10 weeks. This section documents
+    **completed SEI projects**.
+
+-   :material-handshake: **[Industry Partnerships](partnerships/index.md)**
+
+    ---
+
+    Ongoing relationships with companies and agencies that sponsor projects,
+    host interns, mentor teams, and hire graduates. This section tracks each
+    **partner organization** and the state of the engagement.
 
 </div>
 
-## The four sections, and how they map to the proposal form
+## How the programs connect
 
-| Section on this site | Related question on the Google Form |
-| --- | --- |
-| **Capstone Project Idea** | *Project Proposal or Idea* — brief summary and needs |
-| **Sponsor** | *Client Involvement* (meeting 1–2×/month) and *Prototype Ownership* |
-| **Scholarship** | *Financial Sponsorship* — willingness to sponsor and approximate budget |
-| **Deliverables** | Defined here by the project team (not a separate form question) |
+| | Capstone | SEI | Industry Partnerships |
+| --- | --- | --- | --- |
+| **Duration** | Full academic year | 8–10 weeks (summer) | Multi-year |
+| **Who** | Senior teams of 3–5 | 1–2 students per project | Faculty + partner leads |
+| **Output** | Prototype + final showcase | Deliverable + report | Pipeline of projects & interns |
+| **This site shows** | Ideas in progress | Completed work | Partner status |
 
 !!! note "Keeping it current"
-    Ideas change. Each idea page shows a **status** pill and a *last updated* date
-    so reviewers know how firm a concept is.
+    Every project and partner page shows a **status** pill and a *last updated*
+    date so it is clear how current the information is.
