@@ -1,0 +1,140 @@
+/* ===========================================================================
+   Biola University brand palette
+   Source: biola.edu/brand/toolkits-standards/visual-design
+   Biola Red #CC1122 · Electric Red #FF342E · Grad Blue #1D273B
+   Sky Blue #E2EFF8 · Electric Blue #78D2F7 · Fountain Blue #0488A4
+   Talbot East Slate #2F3E53
+   =========================================================================== */
+
+:root {
+  --biola-red: #cc1122;
+  --biola-electric-red: #ff342e;
+  --biola-red-dark: #a50d1b;
+  --biola-navy: #1d273b;
+  --biola-slate: #2f3e53;
+  --biola-sky: #e2eff8;
+  --biola-electric-blue: #78d2f7;
+  --biola-fountain-blue: #0488a4;
+
+  /* Material theme hooks (light) */
+  --md-primary-fg-color: var(--biola-red);
+  --md-primary-fg-color--light: var(--biola-electric-red);
+  --md-primary-fg-color--dark: var(--biola-red-dark);
+  --md-accent-fg-color: var(--biola-fountain-blue);
+}
+
+/* Material theme hooks (dark / "slate") */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--biola-electric-red);
+  --md-primary-fg-color--light: var(--biola-electric-red);
+  --md-primary-fg-color--dark: var(--biola-red-dark);
+  --md-accent-fg-color: var(--biola-electric-blue);
+  --md-typeset-a-color: var(--biola-electric-blue);
+  --md-default-bg-color: #16202e;
+}
+
+/* Keep header text readable on the red bar */
+.md-header,
+.md-tabs {
+  background-color: var(--biola-red);
+}
+
+/* ---------------------------------------------------------------- Hero ---- */
+.biola-hero {
+  background: linear-gradient(135deg, var(--biola-navy) 0%, var(--biola-slate) 60%, var(--biola-fountain-blue) 140%);
+  color: #fff;
+  border-radius: 14px;
+  padding: 2.4rem 2rem;
+  margin: 0 0 2rem;
+}
+
+.biola-hero h1 {
+  color: #fff;
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.biola-hero p {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  max-width: 60ch;
+  opacity: 0.94;
+}
+
+.biola-hero .md-button {
+  margin-top: 1.4rem;
+  margin-right: 0.6rem;
+  border-color: #fff;
+  color: #fff;
+}
+
+.biola-hero .md-button--primary {
+  background-color: var(--biola-red);
+  border-color: var(--biola-red);
+}
+
+.biola-hero .md-button:hover {
+  background-color: #fff;
+  color: var(--biola-navy);
+  border-color: #fff;
+}
+
+/* --------------------------------------------------------- Grid cards ---- */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 12px;
+  border-top: 4px solid var(--biola-red);
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--biola-red);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ------------------------------------------------- Google Form embed ---- */
+.form-embed {
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.form-embed iframe {
+  display: block;
+  width: 100%;
+  /* The Google Form renders ~1920px tall; a little headroom covers inline
+     validation messages. Tune this if you add/remove form questions. */
+  height: 2000px;
+  border: 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* Narrow screens wrap the form text, making it taller; it scrolls
+     internally past this height, which is expected on mobile. */
+  .form-embed iframe { height: 2600px; }
+}
+
+/* ---------------------------------------------------- Status pills ------ */
+.status {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--biola-slate);
+}
+.status.draft       { background: #8a8f98; }
+.status.exploring   { background: var(--biola-fountain-blue); }
+.status.sponsored   { background: #2e7d32; }
+.status.parked      { background: var(--biola-red-dark); }
+
+/* Used by SEI (completed projects) and Industry Partnerships */
+.status.completed   { background: var(--biola-navy); }
+.status.active      { background: #2e7d32; }
+.status.prospective { background: var(--biola-fountain-blue); }
+.status.paused      { background: #8a8f98; }
