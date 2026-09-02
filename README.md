@@ -1,4 +1,4 @@
-# Biola-X site
+# Biola-X site test
 
 An [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) site for
 **Biola-X**, Biola University Engineering's umbrella initiative for
